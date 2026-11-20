@@ -75,10 +75,12 @@
         <a href="#finance"><span class="module-icon purple">฿</span><div><b>Finance</b><small>รับ–จ่าย ลูกหนี้ เจ้าหนี้</small></div><span class="map-tag">CORE</span></a>
         <a href="#accounting"><span class="module-icon purple">≡</span><div><b>Accounting</b><small>บัญชี ภาษี และรายงาน</small></div><span class="map-tag">CORE</span></a>
         <a href="#asset"><span class="module-icon amber">⌂</span><div><b>Asset</b><small>ทะเบียน ค่าเสื่อม และงานซ่อม</small></div><span class="map-tag">BUSINESS</span></a>
+        <a href="#hrm"><span class="module-icon">♙</span><div><b>HRM</b><small>พนักงานและโครงสร้างองค์กร</small></div><span class="map-tag">ตามขอบเขต</span></a>
+        <a href="#logistics"><span class="module-icon blue">→</span><div><b>Logistics</b><small>แผนและสถานะการจัดส่ง</small></div><span class="map-tag">ตามขอบเขต</span></a>
         <a href="#production"><span class="module-icon amber">⚙</span><div><b>Production</b><small>BOM, WIP และต้นทุนการผลิต</small></div><span class="map-tag">EXPERTISE ADD-ON</span></a>
       </nav>
       <div class="foundation"><b>ฐานร่วมของระบบ</b><span>บริษัท / สาขา / คลัง</span><span>ผู้ใช้และสิทธิ์</span><span>เลขที่เอกสาร</span><span>Workflow &amp; Audit</span></div>
-      <p class="slide-note">Core เป็นฐานของ Business · Production ซื้อเพิ่มได้ · รายละเอียดฟีเจอร์และสิทธิ์ยืนยันตามขอบเขตโครงการ</p>
+      <p class="slide-note">Core เป็นฐานของ Business · Production ซื้อเพิ่มได้ · HRM และ Logistics ประเมินตามขอบเขตและยังไม่รวมในราคามาตรฐานที่แสดง</p>
     </section>
 
     <section class="slide" id="dashboard" data-title="Dashboard · ภาพรวมธุรกิจ" aria-labelledby="dashboard-title">
@@ -143,8 +145,24 @@
       <ol class="flow" aria-label="วงจรสินทรัพย์"><li><small>เอกสารซื้อ / ยอดยกมา</small><b>รับรู้สินทรัพย์</b></li><li><small>ASSET</small><b>ทะเบียน &amp; ผู้ดูแล</b></li><li><small>ตามอายุการใช้งาน</small><b>ค่าเสื่อม / โอนย้าย</b></li><li><small>ACCOUNTING</small><b>GL &amp; กระทบยอด</b></li></ol>
     </section>
 
+    <section class="slide" id="hrm" data-title="HRM · บุคลากรและองค์กร" aria-labelledby="hrm-title">
+      <div class="slide-top"><span class="eyebrow">09 · HUMAN RESOURCE MANAGEMENT</span><span class="pill">ตามขอบเขต</span></div>
+      <h2 id="hrm-title">ข้อมูลคนและโครงสร้างองค์กร<br><span class="gradient-text">อยู่ในระบบเดียวกัน</span></h2>
+      <p class="lead">จัดระเบียบข้อมูลพนักงานและงานบุคคลที่จำเป็น โดยเปิดใช้เฉพาะส่วนที่ตรงกับกระบวนการขององค์กร</p>
+      <div class="cards three"><article class="panel"><span class="panel-index">EMPLOYEE</span><h3>ข้อมูลพนักงาน</h3><ul><li>ประวัติและสถานะการทำงาน</li><li>เอกสารและข้อมูลติดต่อ</li><li>สาขา หน่วยงาน และตำแหน่ง</li></ul></article><article class="panel"><span class="panel-index">ORGANIZATION</span><h3>โครงสร้างและสิทธิ์</h3><ul><li>บริษัท สาขา และหน่วยงาน</li><li>สายบังคับบัญชาและผู้รับผิดชอบ</li><li>กำหนดสิทธิ์ตามบทบาท</li></ul></article><article class="panel"><span class="panel-index">LEAVE &amp; TIME</span><h3>ลาและเวลาทำงาน</h3><ul><li>คำขอและขั้นตอนอนุมัติ</li><li>ปฏิทินและข้อมูลเวลาทำงาน</li><li>รายงานตามขอบเขตที่เปิดใช้</li></ul></article></div>
+      <p class="slide-note">Payroll เครื่องลงเวลา และการเชื่อมต่อระบบภายนอกไม่ถือว่ารวมโดยอัตโนมัติ ต้องยืนยันข้อมูล กฎคำนวณ และขอบเขตในข้อเสนอ</p>
+    </section>
+
+    <section class="slide" id="logistics" data-title="Logistics · วางแผนการจัดส่ง" aria-labelledby="logistics-title">
+      <div class="slide-top"><span class="eyebrow">10 · LOGISTICS</span><span class="pill">ตามขอบเขต</span></div>
+      <h2 id="logistics-title">จากสินค้าพร้อมส่ง<br><span class="gradient-text">ถึงสถานะการส่งมอบ</span></h2>
+      <p class="lead">เชื่อมความต้องการจัดส่งจากงานขายและคลัง เพื่อให้ทีมเห็นแผน ผู้รับผิดชอบ และความคืบหน้าในจุดเดียว</p>
+      <div class="cards three"><article class="panel"><span class="panel-index">PLAN</span><h3>เตรียมแผนจัดส่ง</h3><ul><li>รายการรอส่งจากเอกสารขาย</li><li>วันส่ง จุดส่ง และเงื่อนไข</li><li>ตรวจความพร้อมของสินค้ากับคลัง</li></ul></article><article class="panel"><span class="panel-index">TRIP</span><h3>จัดเที่ยวและผู้รับผิดชอบ</h3><ul><li>รวมรายการเป็นเที่ยวส่ง</li><li>ระบุรถ คนขับ หรือทีมจัดส่ง</li><li>ติดตามเอกสารที่เกี่ยวข้อง</li></ul></article><article class="panel"><span class="panel-index">DELIVERY</span><h3>ติดตามการส่งมอบ</h3><ul><li>สถานะระหว่างเตรียมและจัดส่ง</li><li>บันทึกผลและปัญหาการส่งมอบ</li><li>เชื่อมกลับไปยัง Sales และ WMS</li></ul></article></div>
+      <p class="slide-note">การจัดเส้นทางอัตโนมัติ GPS Fleet Management และการเชื่อมผู้ให้บริการขนส่งต้องประเมินแยกตามขอบเขต</p>
+    </section>
+
     <section class="slide" id="production" data-title="Production · วางแผนและงานผลิต" aria-labelledby="production-title">
-      <div class="slide-top"><span class="eyebrow">09 · PRODUCTION EXPERTISE</span><span class="pill addon-pill">โมดูลเสริม · ความเชี่ยวชาญหลัก</span></div>
+      <div class="slide-top"><span class="eyebrow">11 · PRODUCTION EXPERTISE</span><span class="pill addon-pill">โมดูลเสริม · ความเชี่ยวชาญหลัก</span></div>
       <div class="split"><div><h2 id="production-title">เห็นตั้งแต่แผนผลิต<br><span class="gradient-text">ถึงที่มาของต้นทุน</span></h2><p class="lead">พัฒนาจากประสบการณ์ระบบในธุรกิจผลิตและแปรรูปโลหะจริง โดยยังเปิดเป็นโมดูลเสริมเพื่อไม่บังคับธุรกิจซื้อมาขายไปให้ใช้ขั้นตอนผลิต</p><ul class="feature-list"><li><b>BOM และการวางแผน</b><span>โครงสร้างวัตถุดิบ ใบสั่งผลิต Work Order และ Planning Timeline</span></li><li><b>Shop Floor สำหรับหน้างาน</b><span>คิวงาน เบิก / คืนวัตถุดิบ ของเสีย รับสินค้าผลิต และแจ้งปัญหา</span></li><li><b>เชื่อมสินค้าและต้นทุน</b><span>WMS ดูแลการเคลื่อนไหว · ติดตาม WIP และต้นทุนตามรายการผลิต</span></li></ul></div><figure class="product-shot"><div class="shot-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span> MintERP / Production Control Center</div><a href="/assets/images/screenshots/production.png" target="_blank" rel="noopener noreferrer" aria-label="เปิดภาพ Production ขนาดเต็มในแท็บใหม่"><img src="/assets/images/screenshots/production.png" alt="Production Control Center แสดงคิวและสถานะงานผลิต" width="1440" height="1100" loading="lazy"></a><figcaption>หน้าจอจากระบบทดสอบ · ข้อมูลตัวอย่างและชื่อที่แทนที่แล้ว</figcaption></figure></div>
       <div class="connection"><b>เชื่อมกับ</b> WMS ↔ วัตถุดิบ / สินค้าผลิต · Accounting ↔ ต้นทุน · Sales → คำขอผลิต <span class="status-note">ส่วน Sales → Production รอตรวจรับ UAT</span></div>
     </section>

@@ -65,7 +65,7 @@
 .takeaway b { color: #14765e; }
 .takeaway > span { color: var(--muted); }
 .slide-note { margin: 18px 0 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
-.module-map { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
+.module-map { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
 .module-map a { position: relative; display: flex; align-items: center; gap: 14px; min-height: 116px; padding: 20px 18px 29px; border: 1px solid #e0e9eb; border-radius: 15px; background: #ffffffbf; transition: border-color .2s, transform .2s; }
 .module-map a:hover { transform: translateY(-3px); border-color: var(--mint); }
 .module-map b, .module-map small { display: block; }
@@ -285,7 +285,7 @@
   .panel p, .panel li { font-size: 11px; }
   .panel-index { margin-bottom: 12px; font-size: 9px; }
   .answer { font-size: 11px; margin-top: 12px; padding-top: 12px; }
-  .module-map { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .module-map { grid-template-columns: repeat(4, 1fr); gap: 10px; }
   .module-map a { min-height: 92px; padding: 14px 14px 24px; }
   .module-map b { font-size: 15px; }
   .module-map small { font-size: 10px; }

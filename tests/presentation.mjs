@@ -15,7 +15,7 @@ for (const [, id] of html.matchAll(/(?:href="#|aria-labelledby=")([^"]+)"/g)) {
 for (const [, path] of html.matchAll(/(?:src|href)="(\/assets\/[^"?#]+)/g)) {
   assert.ok(existsSync(new URL(path.slice(1), root)), `asset exists: ${path}`);
 }
-for (const module of ['Dashboard', 'CRM', 'POS', 'Purchasing', 'WMS', 'Finance', 'Accounting', 'Asset', 'Production']) {
+for (const module of ['Dashboard', 'CRM', 'POS', 'Purchasing', 'WMS', 'Finance', 'Accounting', 'Asset', 'HRM', 'Logistics', 'Production']) {
   assert.ok(html.includes(module), `module: ${module}`);
 }
 for (const [, amount] of html.matchAll(/฿([\d,]+)/g)) {
@@ -44,7 +44,7 @@ class Element {
 }
 const slides = [...html.matchAll(/<section class="slide[^\"]*" id="([^"]+)" data-title="([^"]+)"/g)]
   .map(([, id, title]) => Object.assign(new Element(id), { dataset: { title } }));
-assert.equal(slides.length, 22);
+assert.equal(slides.length, 24);
 const elements = Object.fromEntries(ids.map(id => [id, new Element(id)]));
 const controls = Object.assign(new Element('controls'), { offsetHeight: 80 });
 const header = Object.assign(new Element('header'), { offsetHeight: 76 });
@@ -109,8 +109,8 @@ assert.deepEqual(active(), ['intro'], 'clamp first slide');
 key('End');
 assert.deepEqual(active(), ['contact']);
 assert.equal(elements['next-slide'].disabled, true);
-assert.equal(elements['slide-count'].textContent, '22 / 22');
-assert.equal(elements['deck-progress'].value, 22);
+assert.equal(elements['slide-count'].textContent, '24 / 24');
+assert.equal(elements['deck-progress'].value, 24);
 key('ArrowRight');
 assert.deepEqual(active(), ['contact'], 'clamp last slide');
 elements['prev-slide'].events.click();

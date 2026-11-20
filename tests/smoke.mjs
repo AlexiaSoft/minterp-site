@@ -35,10 +35,10 @@ assert.match(html, /หน้าจอจริง · ข้อมูลตั�
 assert.equal([...html.matchAll(/class="why-grid"|class="audience-grid"/g)].length, 2, 'landing explains differentiation and audience fit');
 assert.match(html, /ประสบการณ์ระบบในธุรกิจผลิตและแปรรูปโลหะจริง/);
 assert.equal([...html.matchAll(/class="production-flow"/g)].length, 1, 'production expertise explains one end-to-end costing flow');
-for (const module of ['Dashboard', 'CRM', 'POS', 'จัดซื้อ', 'WMS', 'Finance', 'Accounting', 'Asset', 'Production']) {
+for (const module of ['Dashboard', 'CRM', 'POS', 'จัดซื้อ', 'WMS', 'Finance', 'Accounting', 'Asset', 'HRM', 'Logistics', 'Production']) {
   assert.ok(html.includes(module), `landing page includes ${module}`);
 }
-assert.equal([...html.matchAll(/class="feature-card(?: feature-card-highlight)? reveal"/g)].length, 9, 'all nine product modules are described');
+assert.equal([...html.matchAll(/class="feature-card(?: feature-card-highlight)? reveal"/g)].length, 11, 'all eleven product modules are described');
 for (const price of ['Subscription', 'Perpetual License', '฿5,900', '฿59,000', '฿10,900', '฿109,000', '฿3,900', '฿39,000', '฿320,000', '฿520,000', '฿150,000', '฿200', '฿2,000', '฿900', '฿9,000', '฿30,000', '฿500', '฿15,000', '฿5,000', '฿7,900', '฿79,000', '฿78,000', '฿148,000', '฿202,000', '฿380,000', '฿57,600', '฿560,000', '฿84,600', '฿620,000', '฿93,600', '฿800,000', '฿120,600', '฿459,000', '฿639,000', '฿116,600', '฿143,600', '฿719,000', '฿172,600', '฿899,000', '฿199,600', '฿50,000', '฿40,000', '฿10,000', '฿27,000', '฿5,400', '฿7,200', '฿1,800', 'ผู้ใช้ 8 บัญชี', 'ผู้ใช้ 10 บัญชี', 'ผู้ใช้ 30 บัญชี', 'คลังสินค้า 3 แห่งรวม', 'คลังสินค้า 15 แห่งรวม', 'Expansion Pack', 'AWS S3 100 GB', '200 GB', 'MA + Managed Cloud', 'SUBSCRIPTION BUDGET', 'LICENSE BUDGET', 'Server ลูกค้า', 'ข้อมูลที่บันทึกใน MintERP เป็นข้อมูลของลูกค้า', 'คลังสินค้า 2 แห่งรวม', 'คลังสินค้า 6 แห่งรวม', 'Cloud Hosting', 'Managed Cloud', 'วัน/เวลาทำการ', 'คำถามการใช้งานและตรวจสอบปัญหาระบบ', '18%', 'ไม่จำเป็น MA เป็นบริการเลือกต่ออายุ', 'MintERP ต่างจากโปรแกรมบัญชีออนไลน์ทั่วไปอย่างไร']) {
   assert.ok(html.includes(price), `pricing page includes ${price}`);
 }
